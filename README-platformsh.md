@@ -36,7 +36,6 @@
 <img src="https://img.shields.io/static/v1?label=License&message=MIT&style=for-the-badge&labelColor=f4f2f3&color=ffd9d9" alt="License" />
 </a>&nbsp&nbsp
 <br /><br />
-https://raw.githubusercontent.com/platformsh/template-builder/master/templates/drupal10/.platform.template.yaml
 <a href="https://console.platform.sh/projects/create-project/?template=https://raw.githubusercontent.com/platformsh/template-builder/master/templates/drupal10/.platform.template.yaml&utm_campaign=deploy_on_platform?utm_medium=button&utm_source=affiliate_links&utm_content=https://raw.githubusercontent.com/platformsh-templates/drupal10/updates/.platform.template.yaml" target="_blank" title="Deploy with Platform.sh"><img src="https://platform.sh/images/deploy/deploy-button-lg-blue.svg" width="175px"></a>
 </p>
 </p>
@@ -692,7 +691,7 @@ drush cache-rebuild
 <details>
 <summary><strong>Default <code>hash_salt</code> behavior</strong></summary><br/>
 
-Drupal's [default settings set](https://github.com/drupal/drupal/blob/10.3.x/core/assets/scaffold/files/default.settings.php#L252) `hash_salt` to an empty string:
+Drupal's [default settings set](https://github.com/drupal/drupal/blob/10.0.0-rc1/core/assets/scaffold/files/default.settings.php#L252) `hash_salt` to an empty string:
 
 ```php
 $settings['hash_salt'] = '';

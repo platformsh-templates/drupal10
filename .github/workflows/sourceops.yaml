@@ -1,0 +1,57 @@
+name: Trigger Source Operations on a Schedule
+on:
+  schedule:
+    # Run at 00:15 every day
+    - cron: '15 0 * * *'
+  workflow_dispatch:
+
+env:
+  PLATFORMSH_CLI_TOKEN: ${{ secrets.TEMPLATES_CLI_TOKEN }}
+  GITHUB_TOKEN: ${{ secrets.TEMPLATES_GITHUB_TOKEN }}
+
+jobs:
+  run_dm_update:
+    name: Trigger Source Op
+    runs-on: ubuntu-latest
+    if: ${{ github.repository_owner == 'platformsh-templates' }}
+    steps:
+      - name: 'Setup Python'
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+      - name: "Install PSH CLI tool"
+        run: |
+          curl -fsS https://platform.sh/cli/installer | php
+          # for some reason, sourcing our .bashrc file does not successfully prepend our path to PATH
+          export PATH="${HOME}/.platformsh/bin:${PATH}"
+      - uses: actions/checkout@v2
+      - name: 'Get project ID'
+        run: |
+          # grab the array entries where config.url contain 'platform.sh' then map back to an array. if our
+          # array length is 1, return the entry for config.url, otherwise return error
+          integrationURL=$(gh api "/repos/${{ github.repository }}/hooks" | jq 'map(select(.config.url | contains("platform.sh"))) | if . | length == 1 then .[0].config.url else "error" end')
+          if [[ "error" == "${integrationURL}" ]]; then
+              echo "::error::Either more than one webhook, or zero webhooks were returned. I was expecting just one."
+              exit 1
+          fi
+
+          projIDpttrn='\/projects\/([^\/]+)\/integrations'
+          if [[ "${integrationURL}" =~ ${projIDpttrn} ]]; then
+               echo "PLATFORMSH_PROJECT=${BASH_REMATCH[1]}" >> $GITHUB_ENV
+               echo "::notice::Project ID is ${BASH_REMATCH[1]}"
+               #echo "::set-output name=projectID::${BASH_REMATCH[1]}"
+          else
+              echo "::error::We were unable to extract the project ID from the integration url of ${integrationURL}"
+              exit 1
+          fi
+
+      - name: 'Run SourceOp Tools'
+        run: |
+          if [[ "${PATH}" != *".platformsh"* ]]; then
+            echo "psh installer not in PATH"
+            export PATH="${HOME}/.platformsh/bin:${PATH}"
+          fi
+          printf "Beginning Source Operations toolkit install...\n"
+
+          curl -fsS https://raw.githubusercontent.com/gilzow/source-operations-debug/main/setup.sh | { bash /dev/fd/3 trigger-sopupdate; } 3<&0
+

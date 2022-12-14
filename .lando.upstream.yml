@@ -1,0 +1,32 @@
+# This file sets some good defaults for local development using this Platform.sh
+# template with Lando.
+#
+# Note that you should not edit this file so it can continue to receive upstream
+# updates. If you wish to change the values below then override them in your
+# normal .lando.yml.
+
+# These both allow you to test this template without needing a site on Platform.sh
+# However you will want to replace them in your .lando.yml
+name: platformsh-drupal10
+recipe: platformsh
+
+config:
+
+  # This section overrides Platform.sh configuration with values that make more
+  # sense for local development.
+  #
+  # Note that "app" is the name of the application defined in your
+  # .platform.app.yaml or applications.yaml.
+  overrides:
+    app:
+      variables:
+        drupalconfig:
+          "system.file:path:temporary": "/tmp"
+        drupalsettings:
+          "skip_permissions_hardening": 1
+
+
+# These are tools that are commonly used during development for this template.
+tooling:
+  drush:
+    service: app

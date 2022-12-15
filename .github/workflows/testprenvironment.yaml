@@ -1,0 +1,38 @@
+name: "TestPrEnvironment"
+on:
+  workflow_run:
+    workflows: [ "platformsh" ]
+    types:
+      - completed
+  pull_request:
+    branches:
+      - master
+env:
+  GITHUB_TOKEN: ${{ secrets.TEMPLATES_GITHUB_TOKEN }}
+jobs:
+  test-pr-env:
+    name: TestPrEnvironment
+    runs-on: ubuntu-latest
+    if: ${{ github.repository_owner == 'platformsh-templates' }}
+    steps:
+      - name: 'Wait for psh and get target url'
+        id: get-target-url
+        uses: platformsh/gha-retrieve-psh-prenv-url@main
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+      - name: 'Does Our App Work?'
+        id: test-environment
+        run: |
+          target_url=${{ steps.get-target-url.outputs.target_url }}
+          echo "::notice::The target url returned from our github action: ${target_url}"
+          #ok, so for whatever strange reason, our integration returns the http version of the PR environment, not https
+          #hence to parameter expansion replacement.
+          #we dont need the whole response (yet), just see if we get a 200
+          response=$(curl -s -o /dev/null -I -w "%{http_code}" "${target_url//http:/https:}");
+          if [[ "200" == "${response}" ]]; then
+            echo "::notice::Environment responded with http header 200"
+          else
+            echo "::error::Response from environment was something other than 200. Response returned was ${response}"
+            exit 1;
+          fi
+

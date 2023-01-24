@@ -37,7 +37,7 @@ jobs:
 
           projIDpttrn='\/projects\/([^\/]+)\/integrations'
           if [[ "${integrationURL}" =~ ${projIDpttrn} ]]; then
-               echo "PLATFORMSH_PROJECT=${BASH_REMATCH[1]}" >> $GITHUB_ENV
+               echo "PLATFORM_PROJECT=${BASH_REMATCH[1]}" >> $GITHUB_ENV
                echo "::notice::Project ID is ${BASH_REMATCH[1]}"
                #echo "::set-output name=projectID::${BASH_REMATCH[1]}"
           else
@@ -53,5 +53,5 @@ jobs:
           fi
           printf "Beginning Source Operations toolkit install...\n"
 
-          curl -fsS https://raw.githubusercontent.com/gilzow/source-operations-debug/main/setup.sh | { bash /dev/fd/3 trigger-sopupdate; } 3<&0
+          curl -fsS https://raw.githubusercontent.com/platformsh/source-operations/main/setup.sh | { bash /dev/fd/3 trigger-sopupdate; } 3<&0
 

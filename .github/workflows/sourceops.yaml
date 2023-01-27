@@ -53,5 +53,5 @@ jobs:
           fi
           printf "Beginning Source Operations toolkit install...\n"
 
-          curl -fsS https://raw.githubusercontent.com/gilzow/source-operations-debug/main/setup.sh | { bash /dev/fd/3 trigger-sopupdate; } 3<&0
+          curl -fsS https://raw.githubusercontent.com/platformsh/source-operations/main/setup.sh | { bash /dev/fd/3 trigger-sopupdate; } 3<&0
 

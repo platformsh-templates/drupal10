@@ -24,8 +24,9 @@ jobs:
         id: last-updated
         shell: bash
         run: |
+          defaultBranch="${{ github.event.repository.default_branch }}"
           date > ./.platform/last.updated
           git add ./.platform/last.updated
           git commit -m "auto-updates version, post merge"
-          git push origin main
+          git push origin ${defaultBranch}
 

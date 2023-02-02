@@ -27,7 +27,8 @@ var scenarioPaths = {};
 scenarioPaths.paths = [
     {
         "label":"Vegan chocolate and nut brownies",
-        "path": "en/recipes/vegan-chocolate-and-nut-brownies/"
+        "path": "en/recipes/vegan-chocolate-and-nut-brownies/",
+        "delay": 2000,
     },
     {
         "label": "Category: Healthy",

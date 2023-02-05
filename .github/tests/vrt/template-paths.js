@@ -32,11 +32,13 @@ scenarioPaths.paths = [
     },
     {
         "label": "Category: Healthy",
-        "path": "en/tags/healthy/"
+        "path": "en/tags/healthy/",
+        "delay": 2000,
     },
     {
         "label": "All Articles",
-        "path": "en/articles/"
+        "path": "en/articles/",
+        "delay": 2000,
     }
 ];
 

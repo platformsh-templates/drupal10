@@ -41,7 +41,7 @@ jobs:
         shell: bash
         run: |
           echo "::notice::Enforce Admins is enabled. Temporarily disabling..."
-          gh api --method DELETE "/repos/${GITHUB_REPOSITORY}/branches/${DEFAULT_BRANCH}/protection/enforce_admins" --quiet \
+          gh api --method DELETE "/repos/${GITHUB_REPOSITORY}/branches/${DEFAULT_BRANCH}/protection/enforce_admins" --silent \
                && echo "::notice::Enforce admins disabled" \
                || echo "::error::Disabling enforce admin failed"
 

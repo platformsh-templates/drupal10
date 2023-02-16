@@ -23,3 +23,4 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           baseline-url: ${{ vars.BASELINE_URL }}
+          delay-start: 2

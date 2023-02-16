@@ -26,17 +26,27 @@ var scenarioPaths = {};
  */
 scenarioPaths.paths = [
     {
+        "label": "Home",
+        "delay": 2000,
+    },
+    {
+        "label": "Forced 404",
+        "delay": 2000,
+    },
+    {
         "label":"Vegan chocolate and nut brownies",
         "path": "en/recipes/vegan-chocolate-and-nut-brownies/",
         "delay": 2000,
     },
     {
         "label": "Category: Healthy",
-        "path": "en/tags/healthy/"
+        "path": "en/tags/healthy/",
+        "delay": 2000,
     },
     {
         "label": "All Articles",
-        "path": "en/articles/"
+        "path": "en/articles/",
+        "delay": 2000,
     }
 ];
 

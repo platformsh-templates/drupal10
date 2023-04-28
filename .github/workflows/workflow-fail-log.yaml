@@ -1,0 +1,42 @@
+########################################################################################################################
+##                                                                                                                    ##
+## This github workflow file is part of the Platform.sh process of updating and maintaining our collection of         ##
+## templates. For more information see https://github.com/platformsh-templates/ghrw-templates                         ##
+## and https://github.com/search?q=topic%3Agithub-action+org%3Aplatformsh                                             ##
+##                                                                                                                    ##
+##                                       YOU CAN SAFELY DELETE THIS FILE                                              ##
+##                                                                                                                    ##
+########################################################################################################################
+on:
+  workflow_run:
+    workflows: [Trigger Source Operations on a Schedule, Trigger Auto PR on push to update branch, Run Post PR Acceptance jobs]
+    types: [completed]
+
+jobs:
+  on-failure:
+    runs-on: ubuntu-latest
+    if: |
+        github.event.workflow_run.conclusion == 'failure'
+        && github.event.workflow.name != 'TestPrEnv-CW / TestPrEnvironment'
+        && github.repository_owner == 'platformsh-templates'
+        && github.event.commits[0].author.name != 'GitHub Action'
+    steps:
+      - name: Record failed workflow
+        shell: bash
+        run: |
+          echo 'The triggering workflow failed'
+          echo "::notice::The workflow ${{ github.event.workflow.name }} failed."
+      - name: 'Add env vars'
+        shell: bash
+        run: |
+          echo "GH_TOKEN=${{ secrets.TEMPLATES_GITHUB_TOKEN }}" >> $GITHUB_ENV
+      - name: 'Check and record API limits'
+        shell: bash
+        run: |
+          userName=$(gh api user | jq -r '.login')
+          currentRateLimit=$(gh api /users/platformsh/orgs -i | grep X-Ratelimit)
+          echo "::notice::The API user ${userName} has the following X-Ratelimit values:"
+          echo "::group::X-RateLimits for ${userName}"
+          echo "${currentRateLimit}"
+          echo "::endgroup::"
+

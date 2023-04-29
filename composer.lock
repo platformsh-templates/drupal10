@@ -751,16 +751,16 @@
         },
         {
             "name": "consolidation/site-alias",
-            "version": "4.0.0",
+            "version": "4.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/consolidation/site-alias.git",
-                "reference": "103fbc9bad6bbadb1f7533454a8f070ddce18e13"
+                "reference": "b0eeb8c8f3d54d072824ee31b5e00cb5181f91c5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/consolidation/site-alias/zipball/103fbc9bad6bbadb1f7533454a8f070ddce18e13",
-                "reference": "103fbc9bad6bbadb1f7533454a8f070ddce18e13",
+                "url": "https://api.github.com/repos/consolidation/site-alias/zipball/b0eeb8c8f3d54d072824ee31b5e00cb5181f91c5",
+                "reference": "b0eeb8c8f3d54d072824ee31b5e00cb5181f91c5",
                 "shasum": ""
             },
             "require": {
@@ -804,9 +804,9 @@
             "description": "Manage alias records for local and remote sites.",
             "support": {
                 "issues": "https://github.com/consolidation/site-alias/issues",
-                "source": "https://github.com/consolidation/site-alias/tree/4.0.0"
+                "source": "https://github.com/consolidation/site-alias/tree/4.0.1"
             },
-            "time": "2022-10-14T03:41:22+00:00"
+            "time": "2023-04-29T17:18:10+00:00"
         },
         {
             "name": "consolidation/site-process",

@@ -28,6 +28,7 @@ scenarioPaths.paths = [
     {
         "label": "Home",
         "delay": 2000,
+        "removeSelectors": ['#block-umami-footer-promo img']
     },
     {
         "label": "Forced 404",

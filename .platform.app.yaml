@@ -151,6 +151,15 @@ crons:
         commands: 
             start: 'cd web ; drush core-cron'
 
+########################################################################################################################
+##                                                                                                                    ##
+## This source operation is part of the Platform.sh process of updating and maintaining our collection of templates.  ##
+## For more information see https://docs.platform.sh/create-apps/source-operations.html and                           ##
+## https://github.com/platformsh/source-operations                                                                    ##
+##                                                                                                                    ##
+##                  YOU CAN SAFELY DELETE THIS COMMENT AND THE LINES BENEATH IT                                       ##
+##                                                                                                                    ##
+########################################################################################################################
 source:
   operations:
     auto-update:

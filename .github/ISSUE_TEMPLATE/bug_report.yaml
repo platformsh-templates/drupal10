@@ -29,7 +29,7 @@ body:
     attributes:
       label: Reproducing
       description: Help us reproduce what you're seeing.
-      placeholder: |
+      placeholder: | 
           Steps to reproduce the behavior:
           1. Go to '...'
           2. Click on '....'
@@ -69,3 +69,4 @@ body:
       placeholder: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eleifend diam non condimentum tincidunt. Vestibulum convallis eget ante dapibus eleifend.
     validations:
       required: false
+  

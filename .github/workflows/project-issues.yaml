@@ -1,0 +1,20 @@
+########################################################################################################################
+##                                                                                                                    ##
+## This github workflow file is part of the Platform.sh process of updating and maintaining our collection of         ##
+## templates. For more information see https://github.com/platformsh-templates/ghrw-templates                         ##
+## and https://github.com/search?q=topic%3Agithub-action+org%3Aplatformsh                                             ##
+##                                                                                                                    ##
+##                                       YOU CAN SAFELY DELETE THIS FILE                                              ##
+##                                                                                                                    ##
+########################################################################################################################
+name: Sync repository issues to template-builder project
+
+on:
+  issues:
+    types:
+      - opened
+
+jobs:
+  run-reusable-issue-sync:
+    uses: platformsh-templates/ghrw-templates/.github/workflows/project-issues.yaml@main
+    secrets: inherit

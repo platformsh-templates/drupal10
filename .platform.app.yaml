@@ -88,8 +88,7 @@ hooks:
         cd web
         bash $PLATFORM_APP_DIR/drush/platformsh_deploy_drupal.sh
 
-# The web key configures the web server running in front of your app.
-# More information: https://docs.platform.sh/create-apps/app-reference.html#web
+# The configuration of app when it is exposed to the web.
 web:
     locations:
         # All requests not otherwise specified follow these rules.
@@ -145,8 +144,6 @@ web:
                 '^/sites/default/files/(css|js)':
                     expires: 2w
 
-# The keys of the crons definition are the names of the cron jobs. The names must be unique.
-# Full information on crons: https://docs.platform.sh/create-apps/app-reference.html#crons
 crons:
     # Run Drupal's cron tasks every 19 minutes.
     drupal:
@@ -154,15 +151,6 @@ crons:
         commands: 
             start: 'cd web ; drush core-cron'
 
-########################################################################################################################
-##                                                                                                                    ##
-## This source operation is part of the Platform.sh process of updating and maintaining our collection of templates.  ##
-## For more information see https://docs.platform.sh/create-apps/source-operations.html and                           ##
-## https://github.com/platformsh/source-operations                                                                    ##
-##                                                                                                                    ##
-##                  YOU CAN SAFELY DELETE THIS COMMENT AND THE LINES BENEATH IT                                       ##
-##                                                                                                                    ##
-########################################################################################################################
 source:
   operations:
     auto-update:

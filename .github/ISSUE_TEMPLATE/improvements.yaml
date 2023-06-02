@@ -21,7 +21,7 @@ body:
     attributes:
       label: What exactly should be updated?
       description: |
-        - Share as much detail as you can to help us understand the suggestion.
+        - Share as much detail as you can to help us understand the suggestion. 
         - What do you expect as an outcome?
     validations:
       required: true

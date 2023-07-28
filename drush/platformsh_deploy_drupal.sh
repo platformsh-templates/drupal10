@@ -6,7 +6,7 @@
 #
 
 
-if [ -n "$(drush status bootstrap)" ]; then
+if [ -n "$(drush status --field=bootstrap)" ]; then
   drush -y cache-rebuild
   drush -y updatedb
   if [ -n "$(ls $(drush php:eval "echo realpath(Drupal\Core\Site\Settings::get('config_sync_directory'));")/*.yml 2>/dev/null)" ]; then

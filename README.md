@@ -62,7 +62,7 @@ Drupal is a flexible and extensible PHP-based CMS framework.
 
 ### Features
 
-- PHP 8.0
+- PHP 8.1
 - MariaDB 10.4
 - Redis 6
 - Drush included

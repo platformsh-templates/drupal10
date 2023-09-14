@@ -2832,16 +2832,16 @@
         },
         {
             "name": "platformsh/config-reader",
-            "version": "2.4.0",
+            "version": "2.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/platformsh/config-reader-php.git",
-                "reference": "5511abfdb673ccfcf0eac9eaf65204f73edd90fd"
+                "reference": "dc08f50f5a40a767457668ad154116c8ea89cfc6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/platformsh/config-reader-php/zipball/5511abfdb673ccfcf0eac9eaf65204f73edd90fd",
-                "reference": "5511abfdb673ccfcf0eac9eaf65204f73edd90fd",
+                "url": "https://api.github.com/repos/platformsh/config-reader-php/zipball/dc08f50f5a40a767457668ad154116c8ea89cfc6",
+                "reference": "dc08f50f5a40a767457668ad154116c8ea89cfc6",
                 "shasum": ""
             },
             "require": {
@@ -2869,9 +2869,9 @@
             "description": "Small helper to access Platform.sh environment variables",
             "support": {
                 "issues": "https://github.com/platformsh/config-reader-php/issues",
-                "source": "https://github.com/platformsh/config-reader-php/tree/2.4.0"
+                "source": "https://github.com/platformsh/config-reader-php/tree/2.4.1"
             },
-            "time": "2020-12-10T20:50:12+00:00"
+            "time": "2023-09-14T17:07:00+00:00"
         },
         {
             "name": "psr/cache",

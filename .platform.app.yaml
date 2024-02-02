@@ -7,7 +7,7 @@
 name: 'drupal'
 
 # The runtime the application uses.
-type: 'php:8.1'
+type: 'php:8.2'
 
 dependencies:
     php:
@@ -148,7 +148,7 @@ crons:
     # Run Drupal's cron tasks every 19 minutes.
     drupal:
         spec: '*/19 * * * *'
-        commands: 
+        commands:
             start: 'cd web ; drush core-cron'
 
 source:

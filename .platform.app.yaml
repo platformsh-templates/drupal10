@@ -7,7 +7,7 @@
 name: 'drupal'
 
 # The runtime the application uses.
-type: 'php:8.1'
+type: 'php:8.2'
 
 dependencies:
     php:
@@ -115,7 +115,7 @@ web:
             # Rules for specific URI patterns.
             rules:
                 # Allow access to common static files.
-                '\.(jpe?g|png|gif|svgz?|css|js|map|ico|bmp|eot|woff2?|otf|ttf)$':
+                '\.(avif|webp|jpe?g|png|gif|svgz?|css|js|map|ico|bmp|eot|woff2?|otf|ttf)$':
                     allow: true
                 '^/robots\.txt$':
                     allow: true

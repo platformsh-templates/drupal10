@@ -11,7 +11,7 @@ type: 'php:8.2'
 
 dependencies:
     php:
-        composer/composer: '^2.1'
+        composer/composer: '~2.7.0'
 
 runtime:
     # Enable the redis extension so Drupal can communicate with the Redis cache.

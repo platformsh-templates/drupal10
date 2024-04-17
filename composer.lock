@@ -1810,24 +1810,24 @@
         },
         {
             "name": "grasmash/yaml-cli",
-            "version": "3.1.0",
+            "version": "3.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/grasmash/yaml-cli.git",
-                "reference": "00f3fd775f6abbfacd44432f1999c3c3b02791f0"
+                "reference": "a5af7c16a0b98fca7d06e85ba517d526e1ba21de"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/grasmash/yaml-cli/zipball/00f3fd775f6abbfacd44432f1999c3c3b02791f0",
-                "reference": "00f3fd775f6abbfacd44432f1999c3c3b02791f0",
+                "url": "https://api.github.com/repos/grasmash/yaml-cli/zipball/a5af7c16a0b98fca7d06e85ba517d526e1ba21de",
+                "reference": "a5af7c16a0b98fca7d06e85ba517d526e1ba21de",
                 "shasum": ""
             },
             "require": {
                 "dflydev/dot-access-data": "^3",
                 "php": ">=8.0",
-                "symfony/console": "^6",
-                "symfony/filesystem": "^6",
-                "symfony/yaml": "^6"
+                "symfony/console": "^6 || ^7",
+                "symfony/filesystem": "^6 || ^7",
+                "symfony/yaml": "^6 || ^7"
             },
             "require-dev": {
                 "php-coveralls/php-coveralls": "^2",
@@ -1860,9 +1860,9 @@
             "description": "A command line tool for reading and manipulating yaml files.",
             "support": {
                 "issues": "https://github.com/grasmash/yaml-cli/issues",
-                "source": "https://github.com/grasmash/yaml-cli/tree/3.1.0"
+                "source": "https://github.com/grasmash/yaml-cli/tree/3.2.0"
             },
-            "time": "2022-05-09T20:22:34+00:00"
+            "time": "2024-04-17T16:23:04+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",

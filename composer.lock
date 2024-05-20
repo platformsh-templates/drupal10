@@ -64,16 +64,16 @@
         },
         {
             "name": "chi-teck/drupal-code-generator",
-            "version": "3.5.0",
+            "version": "3.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Chi-teck/drupal-code-generator.git",
-                "reference": "74c2dc687e124bfc4001e73e9346b33067e2ec2b"
+                "reference": "7794c268309a6fd7aeecfd1246a01238c14384c4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Chi-teck/drupal-code-generator/zipball/74c2dc687e124bfc4001e73e9346b33067e2ec2b",
-                "reference": "74c2dc687e124bfc4001e73e9346b33067e2ec2b",
+                "url": "https://api.github.com/repos/Chi-teck/drupal-code-generator/zipball/7794c268309a6fd7aeecfd1246a01238c14384c4",
+                "reference": "7794c268309a6fd7aeecfd1246a01238c14384c4",
                 "shasum": ""
             },
             "require": {
@@ -118,9 +118,9 @@
             "description": "Drupal code generator",
             "support": {
                 "issues": "https://github.com/Chi-teck/drupal-code-generator/issues",
-                "source": "https://github.com/Chi-teck/drupal-code-generator/tree/3.5.0"
+                "source": "https://github.com/Chi-teck/drupal-code-generator/tree/3.6.0"
             },
-            "time": "2024-04-11T11:23:44+00:00"
+            "time": "2024-05-20T12:50:42+00:00"
         },
         {
             "name": "composer/installers",

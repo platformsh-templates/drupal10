@@ -18,6 +18,8 @@ $settings['file_scan_ignore_directories'] = [
   'node_modules',
   'bower_components',
 ];
+// @see https://www.drupal.org/node/3177901
+$settings['state_cache'] = TRUE;
 
 // The hash_salt should be a unique random value for each application.
 // If left unset, the settings.platformsh.php file will attempt to provide one.

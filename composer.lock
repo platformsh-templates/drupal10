@@ -942,16 +942,16 @@
         },
         {
             "name": "doctrine/annotations",
-            "version": "1.14.3",
+            "version": "1.14.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/annotations.git",
-                "reference": "fb0d71a7393298a7b232cbf4c8b1f73f3ec3d5af"
+                "reference": "253dca476f70808a5aeed3a47cc2cc88c5cab915"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/annotations/zipball/fb0d71a7393298a7b232cbf4c8b1f73f3ec3d5af",
-                "reference": "fb0d71a7393298a7b232cbf4c8b1f73f3ec3d5af",
+                "url": "https://api.github.com/repos/doctrine/annotations/zipball/253dca476f70808a5aeed3a47cc2cc88c5cab915",
+                "reference": "253dca476f70808a5aeed3a47cc2cc88c5cab915",
                 "shasum": ""
             },
             "require": {
@@ -962,11 +962,11 @@
             },
             "require-dev": {
                 "doctrine/cache": "^1.11 || ^2.0",
-                "doctrine/coding-standard": "^9 || ^10",
-                "phpstan/phpstan": "~1.4.10 || ^1.8.0",
+                "doctrine/coding-standard": "^9 || ^12",
+                "phpstan/phpstan": "~1.4.10 || ^1.10.28",
                 "phpunit/phpunit": "^7.5 || ^8.5 || ^9.5",
-                "symfony/cache": "^4.4 || ^5.4 || ^6",
-                "vimeo/psalm": "^4.10"
+                "symfony/cache": "^4.4 || ^5.4 || ^6.4 || ^7",
+                "vimeo/psalm": "^4.30 || ^5.14"
             },
             "suggest": {
                 "php": "PHP 8.0 or higher comes with attributes, a native replacement for annotations"
@@ -1012,9 +1012,9 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/annotations/issues",
-                "source": "https://github.com/doctrine/annotations/tree/1.14.3"
+                "source": "https://github.com/doctrine/annotations/tree/1.14.4"
             },
-            "time": "2023-02-01T09:20:38+00:00"
+            "time": "2024-09-05T10:15:52+00:00"
         },
         {
             "name": "doctrine/deprecations",
@@ -1143,16 +1143,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "10.3.2",
+            "version": "10.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "10e79c67a903844bef02a5cf10475d9a8b623e7a"
+                "reference": "900f85d93564fa8bea99519c11b564b22df7fb97"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/10e79c67a903844bef02a5cf10475d9a8b623e7a",
-                "reference": "10e79c67a903844bef02a5cf10475d9a8b623e7a",
+                "url": "https://api.github.com/repos/drupal/core/zipball/900f85d93564fa8bea99519c11b564b22df7fb97",
+                "reference": "900f85d93564fa8bea99519c11b564b22df7fb97",
                 "shasum": ""
             },
             "require": {
@@ -1301,22 +1301,22 @@
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
             "support": {
-                "source": "https://github.com/drupal/core/tree/10.3.2"
+                "source": "https://github.com/drupal/core/tree/10.3.3"
             },
-            "time": "2024-08-08T09:23:57+00:00"
+            "time": "2024-09-05T08:50:05+00:00"
         },
         {
             "name": "drupal/core-composer-scaffold",
-            "version": "10.3.2",
+            "version": "10.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-composer-scaffold.git",
-                "reference": "a1a186caeb89899143e0c6912ccee9d3d7181dbe"
+                "reference": "f58ab5c0d02d275c5aa226c4505b457e41b161cc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core-composer-scaffold/zipball/a1a186caeb89899143e0c6912ccee9d3d7181dbe",
-                "reference": "a1a186caeb89899143e0c6912ccee9d3d7181dbe",
+                "url": "https://api.github.com/repos/drupal/core-composer-scaffold/zipball/f58ab5c0d02d275c5aa226c4505b457e41b161cc",
+                "reference": "f58ab5c0d02d275c5aa226c4505b457e41b161cc",
                 "shasum": ""
             },
             "require": {
@@ -1351,13 +1351,13 @@
                 "drupal"
             ],
             "support": {
-                "source": "https://github.com/drupal/core-composer-scaffold/tree/10.3.2"
+                "source": "https://github.com/drupal/core-composer-scaffold/tree/10.3.3"
             },
-            "time": "2024-05-11T08:21:39+00:00"
+            "time": "2024-08-22T14:31:34+00:00"
         },
         {
             "name": "drupal/core-project-message",
-            "version": "10.3.2",
+            "version": "10.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-project-message.git",
@@ -1392,22 +1392,22 @@
                 "drupal"
             ],
             "support": {
-                "source": "https://github.com/drupal/core-project-message/tree/11.0.1"
+                "source": "https://github.com/drupal/core-project-message/tree/11.0.2"
             },
             "time": "2023-07-24T07:55:25+00:00"
         },
         {
             "name": "drupal/core-recommended",
-            "version": "10.3.2",
+            "version": "10.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-recommended.git",
-                "reference": "18b7288d2e661afadfff4a714c5a166bf2554124"
+                "reference": "b143dbac12b8f3aa0c87c4af6300c619fc1abfeb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core-recommended/zipball/18b7288d2e661afadfff4a714c5a166bf2554124",
-                "reference": "18b7288d2e661afadfff4a714c5a166bf2554124",
+                "url": "https://api.github.com/repos/drupal/core-recommended/zipball/b143dbac12b8f3aa0c87c4af6300c619fc1abfeb",
+                "reference": "b143dbac12b8f3aa0c87c4af6300c619fc1abfeb",
                 "shasum": ""
             },
             "require": {
@@ -1416,7 +1416,7 @@
                 "doctrine/annotations": "~1.14.3",
                 "doctrine/deprecations": "~1.1.3",
                 "doctrine/lexer": "~2.1.1",
-                "drupal/core": "10.3.2",
+                "drupal/core": "10.3.3",
                 "egulias/email-validator": "~4.0.2",
                 "guzzlehttp/guzzle": "~7.8.1",
                 "guzzlehttp/promises": "~2.0.2",
@@ -1477,9 +1477,9 @@
             ],
             "description": "Core and its dependencies with known-compatible minor versions. Require this project INSTEAD OF drupal/core.",
             "support": {
-                "source": "https://github.com/drupal/core-recommended/tree/10.3.2"
+                "source": "https://github.com/drupal/core-recommended/tree/10.3.3"
             },
-            "time": "2024-08-08T09:23:57+00:00"
+            "time": "2024-09-05T08:50:05+00:00"
         },
         {
             "name": "drupal/redis",

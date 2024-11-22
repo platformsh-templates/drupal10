@@ -1143,16 +1143,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "10.3.9",
+            "version": "10.3.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "42a6516491b4793158542a2326dc6ad1fe2aa5bd"
+                "reference": "3ebb71e9c4ef0c13f683353547551fca49f9a144"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/42a6516491b4793158542a2326dc6ad1fe2aa5bd",
-                "reference": "42a6516491b4793158542a2326dc6ad1fe2aa5bd",
+                "url": "https://api.github.com/repos/drupal/core/zipball/3ebb71e9c4ef0c13f683353547551fca49f9a144",
+                "reference": "3ebb71e9c4ef0c13f683353547551fca49f9a144",
                 "shasum": ""
             },
             "require": {
@@ -1301,13 +1301,13 @@
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
             "support": {
-                "source": "https://github.com/drupal/core/tree/10.3.9"
+                "source": "https://github.com/drupal/core/tree/10.3.10"
             },
-            "time": "2024-11-20T17:59:45+00:00"
+            "time": "2024-11-22T12:51:33+00:00"
         },
         {
             "name": "drupal/core-composer-scaffold",
-            "version": "10.3.9",
+            "version": "10.3.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-composer-scaffold.git",
@@ -1351,13 +1351,13 @@
                 "drupal"
             ],
             "support": {
-                "source": "https://github.com/drupal/core-composer-scaffold/tree/10.3.9"
+                "source": "https://github.com/drupal/core-composer-scaffold/tree/10.3.10"
             },
             "time": "2024-08-22T14:31:34+00:00"
         },
         {
             "name": "drupal/core-project-message",
-            "version": "10.3.9",
+            "version": "10.3.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-project-message.git",
@@ -1398,16 +1398,16 @@
         },
         {
             "name": "drupal/core-recommended",
-            "version": "10.3.9",
+            "version": "10.3.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-recommended.git",
-                "reference": "03da2860a10c12b86714e778178433b620bb890d"
+                "reference": "1d739e569c9324bcac1ecc7be600d414386a399b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core-recommended/zipball/03da2860a10c12b86714e778178433b620bb890d",
-                "reference": "03da2860a10c12b86714e778178433b620bb890d",
+                "url": "https://api.github.com/repos/drupal/core-recommended/zipball/1d739e569c9324bcac1ecc7be600d414386a399b",
+                "reference": "1d739e569c9324bcac1ecc7be600d414386a399b",
                 "shasum": ""
             },
             "require": {
@@ -1416,7 +1416,7 @@
                 "doctrine/annotations": "~1.14.3",
                 "doctrine/deprecations": "~1.1.3",
                 "doctrine/lexer": "~2.1.1",
-                "drupal/core": "10.3.9",
+                "drupal/core": "10.3.10",
                 "egulias/email-validator": "~4.0.2",
                 "guzzlehttp/guzzle": "~7.8.1",
                 "guzzlehttp/promises": "~2.0.2",
@@ -1477,9 +1477,9 @@
             ],
             "description": "Core and its dependencies with known-compatible minor versions. Require this project INSTEAD OF drupal/core.",
             "support": {
-                "source": "https://github.com/drupal/core-recommended/tree/10.3.9"
+                "source": "https://github.com/drupal/core-recommended/tree/10.3.10"
             },
-            "time": "2024-11-20T17:59:45+00:00"
+            "time": "2024-11-22T12:51:33+00:00"
         },
         {
             "name": "drupal/redis",

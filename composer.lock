@@ -1010,6 +1010,7 @@
                 "issues": "https://github.com/doctrine/annotations/issues",
                 "source": "https://github.com/doctrine/annotations/tree/1.14.4"
             },
+            "abandoned": true,
             "time": "2024-09-05T10:15:52+00:00"
         },
         {

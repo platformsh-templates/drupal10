@@ -1,9 +1,8 @@
 
-<p align="right">
-<a href="https://platform.sh">
-<img src="https://platform.sh/logos/redesign/Platformsh_logo_black.svg" width="150px">
-</a>
-</p>
+> [!WARNING]
+> **This repository is no longer maintained by our internal teams.**  
+> The template is provided *as is* and will not receive updates, bug fixes, or new features.  
+> You are welcome to contribute on it or fork the repository and modify it for your own use.
 
 <p align="center">
 <a href="https://www.drupal.org/">
@@ -35,8 +34,6 @@
 <a href="https://github.com/platformsh-templates/drupal10/blob/master/LICENSE">
 <img src="https://img.shields.io/static/v1?label=License&message=MIT&style=for-the-badge&labelColor=f4f2f3&color=ffd9d9" alt="License" />
 </a>&nbsp&nbsp
-<br /><br />
-<a href="https://console.platform.sh/projects/create-project/?template=https://raw.githubusercontent.com/platformsh/template-builder/master/templates/drupal10/.platform.template.yaml&utm_campaign=deploy_on_platform?utm_medium=button&utm_source=affiliate_links&utm_content=https://raw.githubusercontent.com/platformsh-templates/drupal10/updates/.platform.template.yaml" target="_blank" title="Deploy with Platform.sh"><img src="https://platform.sh/images/deploy/deploy-button-lg-blue.svg" width="175px"></a>
 </p>
 </p>
 
@@ -76,20 +73,7 @@ Drupal is a flexible and extensible PHP-based CMS framework.
 
 #### Quickstart
 
-
-The quickest way to deploy this template on Platform.sh is by clicking the button below.
-This will automatically create a new project and initialize the repository for you.
-
-<p align="center">
-    <a href="https://console.platform.sh/projects/create-project/?template=https://raw.githubusercontent.com/platformsh/template-builder/master/templates/drupal10/.platform.template.yaml">
-        <img src="https://platform.sh/images/deploy/lg-blue.svg" alt="Deploy on Platform.sh" width="170px" />
-    </a>
-</p>
-<br/>
-
-
-
-You can also quickly recreate this project locally with the following command:
+You can quickly recreate this project locally with the following command:
 
 ```bash
 composer create-project platformsh/drupal10 -s dev

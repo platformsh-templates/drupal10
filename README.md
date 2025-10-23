@@ -34,10 +34,7 @@
 </a>&nbsp&nbsp
 <a href="https://github.com/platformsh-templates/drupal10/blob/master/LICENSE">
 <img src="https://img.shields.io/static/v1?label=License&message=MIT&style=for-the-badge&labelColor=f4f2f3&color=ffd9d9" alt="License" />
-</a>&nbsp&nbsp
-<br /><br />
-<a href="https://console.platform.sh/projects/create-project/?template=https://raw.githubusercontent.com/platformsh/template-builder/master/templates/drupal10/.platform.template.yaml&utm_campaign=deploy_on_platform?utm_medium=button&utm_source=affiliate_links&utm_content=https://raw.githubusercontent.com/platformsh-templates/drupal10/updates/.platform.template.yaml" target="_blank" title="Deploy with Platform.sh"><img src="https://platform.sh/images/deploy/deploy-button-lg-blue.svg" width="175px"></a>
-</p>
+</a>
 </p>
 
 <hr>
@@ -79,15 +76,6 @@ Drupal is a flexible and extensible PHP-based CMS framework.
 
 The quickest way to deploy this template on Platform.sh is by clicking the button below.
 This will automatically create a new project and initialize the repository for you.
-
-<p align="center">
-    <a href="https://console.platform.sh/projects/create-project/?template=https://raw.githubusercontent.com/platformsh/template-builder/master/templates/drupal10/.platform.template.yaml">
-        <img src="https://platform.sh/images/deploy/lg-blue.svg" alt="Deploy on Platform.sh" width="170px" />
-    </a>
-</p>
-<br/>
-
-
 
 You can also quickly recreate this project locally with the following command:
 
@@ -749,7 +737,7 @@ This template includes a starting [`.blackfire.yml`](.blackfire.yml) file that c
 This template is maintained by the Platform.sh Developer Relations team, and they will be notified of all issues and pull requests you open here.
 
 - **Community:** Share your question with the community, or see if it's already been asked on our [Community site](https://community.platform.sh).
-- **Slack:** If you haven't done so already, you can join Platform.sh's [public Slack](https://chat.platform.sh/) channels and ping the `@devrel_team` with any questions.
+- **Discord:** If you haven't done so already, you can join Upsun's [public Discord](https://discord.gg/upsun) channels and ping the `@devrel_team` with any questions.
 
 
 ### About Platform.sh
@@ -813,7 +801,7 @@ See something that's wrong with this template that needs to be fixed? Something 
 <strong>Need help?</strong>
 <br /><br />
 <a href="https://community.platform.sh"><strong>Ask the Platform.sh Community</strong></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-<a href="https://chat.platform.sh"><strong>Join us on Slack</strong></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<a href="https://discord.gg/upsun"><strong>Join us on Discord</strong></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
 <br />
 </p>
 <br />

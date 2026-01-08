@@ -97,6 +97,33 @@ if ($platformsh->hasRelationship('redis') && !InstallerKernel::installationAttem
   ];
 }
 
+// Enable RabbitMQ configuration and default queue.
+if ($platformsh->hasRelationship('rabbitmq') && class_exists(' Drupal\rabbitmq\Queue\Queue')) {
+  $rabbitmq = $platformsh->credentials('rabbitmq');
+
+  $settings['rabbitmq_credentials']['default'] = [
+    'host' => $rabbitmq['host'],
+    'port' => $rabbitmq['port'],
+    'vhost' => '/',
+    'username' => $rabbitmq['username'],
+    'password' => $rabbitmq['password'],
+    // Uncomment the lines below if you are using AMQP over SSL.
+    /*
+    'ssl' => [
+      'verify_peer_name' => FALSE,
+      'verify_peer' => FALSE,
+      'local_pk' => '~/.ssh/id_rsa',
+    ],
+     */
+    'options' => [
+      'connection_timeout' => 5,
+      'read_write_timeout' => 5,
+    ],
+  ];
+
+  $settings['queue_default'] = 'queue.rabbitmq.default';
+}
+
 if ($platformsh->inRuntime()) {
   // Configure private and temporary file paths.
   if (!isset($settings['file_private_path'])) {

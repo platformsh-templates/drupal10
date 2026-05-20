@@ -168,3 +168,12 @@ foreach ($platformsh->variables() as $name => $value) {
       break;
   }
 }
+
+// Drupal Symfony Mailer (contrib)
+// Platform.sh provides msmtp to intercept sendmail emails and forward them to
+// Sendgrid. Since the msmtp doesn't work with the default -bs sendmail option,
+// you should use the custom command ini_get('sendmail_path').
+// @see: https://www.drupal.org/docs/contributed-modules/drupal-symfony-mailer/getting-started#s-platformsh
+$settings['mailer_sendmail_commands'] = [
+  ini_get('sendmail_path'),
+];
